@@ -20,10 +20,15 @@ SPECIAL_CONSIDERATIONS
 ASK_AMT
 * 'EIN' and 'NAME' are identification columns and neither a feature nor target variable and was dropped
 * The categorical variables with too many unique values can reduce the efficiency of a model - hence two columns were considered and grouped/binned, such that their values with the lowest count form an 'Other' bucket:
+
 ![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.14.42.png)
-    * APPLICATION_TYPE - with 17 unique values reduce to 8 unique values
+
+APPLICATION_TYPE - with 17 unique values reduce to 8 unique values
+
 ![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.15.06.png)
-    * CLASSIFICATION - with 71 unique values to 7 unique values
+
+CLASSIFICATION - with 71 unique values to 7 unique values
+
 ![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.15.19.png)
 
 2. Compiling, Training, and Evaluating the Model
@@ -45,8 +50,11 @@ ASK_AMT
 ## Summary
 
 * First iteration yield 72.68% accuracy and 55.26% loss on the test data
+
 ![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.17.29.png)
+
 * The model optimized by keras tuner yielded the following best model parameters:
     * {'activation': 'relu', 'first_units': 32, 'num_layers': 1, 'units_0': 32, 'units_1': 24, 'tuner/epochs': 12, 'tuner/initial_epoch': 0, 'tuner/bracket': 2, 'tuner/round': 0}
     * The model accuracy increased marginally to 72.80% with 55.56% loss
-![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.17.29.png)
+    
+![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.15.42.png)
