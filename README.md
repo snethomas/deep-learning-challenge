@@ -59,4 +59,4 @@ CLASSIFICATION - with 71 unique values to 7 unique values
     
 ![alt text](https://github.com/snethomas/deep-learning-challenge/blob/main/Images/Screenshot%202023-10-04%20at%2019.15.42.png)
 
-This problem could also be solved using logistic regression models, however the we would not expect the to perform better. 
+This problem could also be solved using logistic regression models, however we would not expect it to perform better. 
