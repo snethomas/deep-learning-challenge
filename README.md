@@ -40,7 +40,7 @@ image.png
     * Reduced the #epochs to 30
 * I also reduced the number of unique values (bins) in APPLICATION_TYPE and CLASSIFICATION columns by changing the cut off values but this did not yield a significant change in results
 
-# Note - The tuner search for best model was terminated after 247 trials due to long run time and the best value of accuracy so far was considered
+### Note - The tuner search for best model was terminated after 247 trials due to long run time and the best value of accuracy so far was considered
 
 ## Summary
 
